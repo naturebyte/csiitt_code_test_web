@@ -1,0 +1,59 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121a33;
+  --text: #eaf0ff;
+  --muted: #a9b4d0;
+  --accent: #6ea8ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #060912);
+  color: var(--text);
+}
+
+.hero {
+  min-height: 60vh;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #2a365f;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #001638;
+  background: var(--accent);
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: #9bb7f0;
+}
