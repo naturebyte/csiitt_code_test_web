@@ -4,6 +4,9 @@
   --text: #eaf0ff;
   --muted: #a9b4d0;
   --accent: #6ea8ff;
+  --accent-about: #4ade80;
+  --accent-skills: #f472b6;
+  --accent-projects: #fbbf24;
 }
 
 * {
@@ -42,6 +45,38 @@ body {
   border: 1px solid #2a365f;
   border-radius: 12px;
   padding: 20px;
+  margin-bottom: 16px;
+  border-top: 4px solid transparent;
+}
+
+.card.about {
+  border-top-color: var(--accent-about);
+}
+
+.card.skills {
+  border-top-color: var(--accent-skills);
+}
+
+.card.projects {
+  border-top-color: var(--accent-projects);
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.pill {
+  display: inline-block;
+  background: #1e2a4d;
+  color: var(--text);
+  border: 1px solid #2a365f;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .btn {
@@ -56,4 +91,25 @@ body {
 
 .btn.secondary {
   background: #9bb7f0;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 40vh;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
