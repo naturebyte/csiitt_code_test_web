@@ -13,7 +13,7 @@
 body {
   margin: 0;
   font-family: Inter, Segoe UI, Arial, sans-serif;
-  background: linear-gradient(180deg, var(--bg), #060912);
+  background: #000;
   color: var(--text);
 }
 
