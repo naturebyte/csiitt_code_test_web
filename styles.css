@@ -1,12 +1,12 @@
 :root {
-  --bg: #0b1020;
-  --panel: #121a33;
-  --text: #eaf0ff;
-  --muted: #a9b4d0;
-  --accent: #6ea8ff;
-  --accent-about: #4ade80;
-  --accent-skills: #f472b6;
-  --accent-projects: #fbbf24;
+  --bg: #16a34a;
+  --panel: #f6f8fb;
+  --text: #111827;
+  --muted: #4b5563;
+  --accent: #2563eb;
+  --accent-about: #16a34a;
+  --accent-skills: #db2777;
+  --accent-projects: #d97706;
 }
 
 * {
@@ -16,8 +16,21 @@
 body {
   margin: 0;
   font-family: Inter, Segoe UI, Arial, sans-serif;
-  background: #000;
+  background: var(--bg);
   color: var(--text);
+}
+
+.banner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero {
@@ -42,7 +55,7 @@ body {
 
 .card {
   background: var(--panel);
-  border: 1px solid #2a365f;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 16px;
@@ -70,9 +83,9 @@ body {
 
 .pill {
   display: inline-block;
-  background: #1e2a4d;
+  background: #eef2ff;
   color: var(--text);
-  border: 1px solid #2a365f;
+  border: 1px solid #c7d2fe;
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.85rem;
