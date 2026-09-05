@@ -1,5 +1,5 @@
 :root {
-  --bg: #16a34a;
+  --bg: #faf8f5;
   --panel: #f6f8fb;
   --text: #111827;
   --muted: #4b5563;
@@ -45,6 +45,21 @@ body {
 .hero p {
   color: var(--muted);
   margin: 0;
+}
+
+#hero-title {
+  animation: fadeInUp 1s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .container {
